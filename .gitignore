@@ -24,4 +24,4 @@ _testmain.go
 *.prof
 cover.*
 bombardier
-bombardier-*
+bombardier-*dist/
