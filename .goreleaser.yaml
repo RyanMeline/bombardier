@@ -53,3 +53,13 @@ changelog:
 release:
   draft: false
   prerelease: auto
+
+# Post a notification to Slack after a successful release.
+# Requires the SLACK_WEBHOOK environment variable (a Slack Incoming Webhook URL).
+announce:
+  slack:
+    enabled: true
+    channel: "#releases"
+    username: "GoReleaser"
+    icon_emoji: ":rocket:"
+    message_template: ":tada: bombardier {{ .Tag }} has been released! Changelog & downloads: {{ .ReleaseURL }}"
