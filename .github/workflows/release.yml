@@ -30,3 +30,6 @@ jobs:
           args: release --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Slack Incoming Webhook URL used by GoReleaser's `announce.slack`
+          # to post a release notification once the release succeeds.
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
