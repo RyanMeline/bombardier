@@ -12,6 +12,8 @@ builds:
     binary: bombardier
     env:
       - CGO_ENABLED=0
+    # -s -w strip the symbol table; -X injects the release version into
+    # the `version` variable in package main (see common.go).
     ldflags:
       - -s -w -X main.version={{ .Version }}
     goos:
