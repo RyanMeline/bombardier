@@ -23,6 +23,7 @@ import (
 type bombardier struct {
 	bytesRead, bytesWritten int64
 
+	//random comment for a commit
 	// HTTP codes
 	req1xx uint64
 	req2xx uint64
